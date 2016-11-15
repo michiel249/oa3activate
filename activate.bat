@@ -1,0 +1,1 @@
+for /f %%i in ('wmic path softwarelicensingservice get OA3xOriginalProductKey ^| find "-"') do slmgr.vbs /ipk %%i
